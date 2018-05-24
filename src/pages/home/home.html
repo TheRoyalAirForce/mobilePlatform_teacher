@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="black">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -13,71 +13,38 @@
 
 <ion-content no-padding>
   <img src="assets/images/androidbanner.png"   alt="">
-  <!--<ion-grid>-->
-    <!--<ion-row>-->
-      <!--<ion-col>-->
-        <!--<h6>今天</h6>-->
-        <!--<h4><span>{{todayNumData.num1 | number:'1.2-2'}}元</span></h4>-->
-        <!--<p>比昨天:<span [ngClass]="{'less-equal':todayNumData.num1add <= 0, 'greater':todayNumData.num1add>0}">{{todayNumData.num1add| number:'1.2-2'}}</span>-->
-          <!--<span style="color: #F00"><ion-icon *ngIf="todayNumData.num1add>0"  name="arrow-round-up"></ion-icon></span>-->
-          <!--<span style="color: #0F0"><ion-icon *ngIf="todayNumData.num1add<0"  name="arrow-round-down"></ion-icon></span>-->
-          <!--<ion-icon *ngIf="todayNumData.num1add==0" name="arrow-round-forward"></ion-icon>-->
-
-        <!--</p>-->
-      <!--</ion-col>-->
-      <!--<ion-col>-->
-        <!--<h6>七日</h6>-->
-        <!--<h4><span>{{todayNumData.num2|number:'1.2-2'}}元</span></h4>-->
-        <!--<p>比同期:<span [ngClass]="{'less-equal':todayNumData.num2add <= 0, 'greater':todayNumData.num2add>0}">{{todayNumData.num2add| number:'1.2-2'}}</span>-->
-          <!--<span style="color: #F00"><ion-icon *ngIf="todayNumData.num2add>0" name="arrow-round-up"></ion-icon></span>-->
-          <!--<span style="color: #0F0"><ion-icon *ngIf="todayNumData.num2add<0" name="arrow-round-down"></ion-icon></span>-->
-          <!--<ion-icon *ngIf="todayNumData.num2add==0" name="arrow-round-forward"></ion-icon>-->
-        <!--</p>-->
-      <!--</ion-col>-->
-      <!--<ion-col>-->
-        <!--<h6>本月</h6>-->
-        <!--<h4><span>{{todayNumData.num3|number:'1.2-2'}}元</span></h4>-->
-        <!--<p>比同期:<span [ngClass]="{'less-equal':todayNumData.num3add <= 0, 'greater':todayNumData.num3add>0}">{{todayNumData.num3add| number:'1.2-2'}}</span>-->
-          <!--<span style="color: #F00"><ion-icon *ngIf="todayNumData.num3add>0" name="arrow-round-up"></ion-icon></span>-->
-          <!--<span style="color: #0F0"><ion-icon *ngIf="todayNumData.num3add<0" name="arrow-round-down"></ion-icon></span>-->
-          <!--<ion-icon *ngIf="todayNumData.num3add==0" name="arrow-round-forward"></ion-icon>-->
-        <!--</p>-->
-      <!--</ion-col>-->
-    <!--</ion-row>-->
-  <!--</ion-grid>-->
-
 
   <ion-grid>
 
     <ion-row class="quick-actions">
 
       <ion-col class="quick-action-item">
-        <a class="shortcut" (click)="qiandao()">
+        <a class="shortcut" (click)="class()">
           <img src="assets/images/add_salse.png" style="width: 50%;height: 50%;">
-          <div style="margin-top: 5px;" >课堂签到</div>
+          <div style="margin-top: 5px;" >查看班级信息</div>
         </a>
       </ion-col>
       <ion-col class="quick-action-item">
-        <a class="shortcut">
+        <a class="shortcut" (click)="kaoqing()">
           <img src="assets/images/add_user.png" style="width: 50%;height: 50%;">
           <div>
-            请假记录
+            查看考勤历史
           </div>
         </a>
       </ion-col>
       <ion-col class="quick-action-item">
-        <a class="shortcut">
+        <a class="shortcut" (click)="statistics()">
           <img src="assets/images/sales_account.png" style="width: 50%;height: 50%;">
           <div>
-            平常表现
+            查看统计信息
           </div>
         </a>
       </ion-col>
       <ion-col class="quick-action-item">
-        <a class="shortcut">
+        <a class="shortcut" (click)="student()">
           <img src="assets/images/a_note.png" style="width: 50%;height: 50%;">
           <div>
-            旷课记录
+            查看学生信息
           </div>
         </a>
       </ion-col>
@@ -85,26 +52,26 @@
     <ion-row class="quick-actions">
 
       <ion-col class="quick-action-item">
-        <a class="shortcut" (click)="pushProductPage()">
+        <a class="shortcut" (click)="score()">
           <img src="assets/images/sales_management.png" style="width: 50%;height: 50%;">
           <div>
-            考勤汇总
+            设置成绩
           </div>
         </a>
       </ion-col>
       <ion-col class="quick-action-item">
-        <a class="shortcut">
+        <a class="shortcut" (click)="course()">
           <img src="assets/images/user_management.png" style="width: 50%;height: 50%;">
           <div>
-            更多功能开发中
+            设置课程
           </div>
         </a>
       </ion-col>
       <ion-col class="quick-action-item">
-        <a class="shortcut">
+        <a class="shortcut" (click)="qiandao()">
           <img src="assets/images/shop_management.png" style="width: 50%;height: 50%;">
           <div>
-            更多功能开发中
+            设置签到
           </div>
         </a>
       </ion-col>

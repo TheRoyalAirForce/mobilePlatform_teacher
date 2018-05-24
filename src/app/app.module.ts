@@ -27,6 +27,13 @@ import {PhotoLibrary} from "@ionic-native/photo-library";
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 import {Camera} from "@ionic-native/camera";
 import {ImagePicker} from "@ionic-native/image-picker";
+import {ClassPage} from "../pages/class/class";
+import {KaoqingPage} from "../pages/kaoqing/kaoqing";
+import {QiandaoPage} from "../pages/qiandao/qiandao";
+import {CouresePage} from "../pages/courese/courese";
+import {ScorePage} from "../pages/score/score";
+import {StatisticsPage} from "../pages/statistics/statistics";
+import {StudentPage} from "../pages/student/student";
 @NgModule({
   declarations: [
     MyApp,
@@ -40,6 +47,13 @@ import {ImagePicker} from "@ionic-native/image-picker";
     SettingPage,
     EditPasswordPage,
     AboutusPage,
+    ClassPage,
+    KaoqingPage,
+    QiandaoPage,
+    CouresePage,
+    ScorePage,
+    StatisticsPage,
+    StudentPage,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +75,13 @@ import {ImagePicker} from "@ionic-native/image-picker";
     SettingPage,
     EditPasswordPage,
     AboutusPage,
+    ClassPage,
+    KaoqingPage,
+    QiandaoPage,
+    CouresePage,
+    ScorePage,
+    StatisticsPage,
+    StudentPage,
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,13 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {LocalStorageProvider} from "../../providers/local-storage/local-storage";
+import {ClassPage} from "../class/class";
+import {KaoqingPage} from "../kaoqing/kaoqing";
+import {StatisticsPage} from "../statistics/statistics";
+import {StudentPage} from "../student/student";
+import {ScorePage} from "../score/score";
+import {CouresePage} from "../courese/courese";
+import {QiandaoPage} from "../qiandao/qiandao";
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -53,11 +60,25 @@ export class HomePage {
       storage.set('todayNum', nowNum);
     }
   }
-  category(){
+  class(){
+    this.navCtrl.push(ClassPage);
+  }
+  kaoqing(){
+    this.navCtrl.push(KaoqingPage);
+  }
+  statistics(){
+    this.navCtrl.push(StatisticsPage);
+  }
+  student(){
+    this.navCtrl.push(StudentPage);
+  }
+  score(){
+    this.navCtrl.push(ScorePage);
+  }
+  course(){
+    this.navCtrl.push(CouresePage);
   }
   qiandao(){
-  }
-  pushProductPage(){
-
+    this.navCtrl.push(QiandaoPage);
   }
 }
