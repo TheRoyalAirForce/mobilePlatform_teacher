@@ -34,6 +34,8 @@ import {CouresePage} from "../pages/courese/courese";
 import {ScorePage} from "../pages/score/score";
 import {StatisticsPage} from "../pages/statistics/statistics";
 import {StudentPage} from "../pages/student/student";
+import { GlobalStorageProvider } from '../providers/global-storage/global-storage';
+import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
 @NgModule({
   declarations: [
     MyApp,
@@ -96,6 +98,8 @@ import {StudentPage} from "../pages/student/student";
     BarcodeScanner,
     Camera,
     ImagePicker,
+    GlobalStorageProvider,
+    RedditDataProvider,
   ]
 })
 export class AppModule {}
