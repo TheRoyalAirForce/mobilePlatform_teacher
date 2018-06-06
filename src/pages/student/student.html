@@ -14,6 +14,8 @@
 </ion-header>
 
 <ion-content>
+  <img src="assets/imgs/1.png" alt="">
+
   <!--<ion-fab top right edge>-->
     <!--<button ion-fab mini><ion-icon name="add"></ion-icon></button>-->
     <!--<ion-fab-list>-->
@@ -21,34 +23,58 @@
     <!--</ion-fab-list>-->
   <!--</ion-fab>-->
   <!--<ion-grid no-lines="">-->
-  <div >
-    <ion-grid>
-      <ion-row class="row1">
-        <ion-col>课程名</ion-col>
-        <!--<ion-col class="col" style="background:#0fff;opacity:0.5" >账号</ion-col>-->
-        <ion-col>学号</ion-col>
-      </ion-row>
-      <ion-row class="row1">
-        <ion-col>数据结构</ion-col>
-        <!--<ion-col class="col" style="background:#0fff;opacity:0.5" >账号</ion-col>-->
-        <ion-col>170327009</ion-col>
-      </ion-row>
-      <ion-row class="row1">
-        <ion-col>数据结构</ion-col>
-        <!--<ion-col class="col" style="background:#0fff;opacity:0.5" >账号</ion-col>-->
-        <ion-col>170327001</ion-col>
-      </ion-row>
-
-      <div class="show3">
-        <ion-row *ngFor="let r of result">
-          <!--&lt;!&ndash;<ion-col>{{ID}}</ion-col>&ndash;&gt;-->
-          <!--<ion-col>{{r.cnameAndID.courseName}}</ion-col>-->
-          <!--<ion-col >{{r.cnameAndID.ID}}</ion-col>-->
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row class="row1">
+          <!--<ion-card-title>-->
+          <ion-col>课程名</ion-col>
+          <ion-col>学号</ion-col>
+          <ion-col>姓名</ion-col>
         </ion-row>
-      </div>
-    </ion-grid>
-  </div>
-
+      </ion-grid>
+      <!--</ion-card-title>-->
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row class="row1">
+          <!--<ion-card-title>-->
+          <ion-col>数据结构</ion-col>
+          <ion-col>170327009</ion-col>
+          <ion-col>陈立</ion-col>
+        </ion-row>
+      </ion-grid>
+      <!--</ion-card-title>-->
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row class="row1">
+          <!--<ion-card-title>-->
+          <ion-col>数据结构</ion-col>
+          <ion-col>170327019</ion-col>
+          <ion-col>邓文路</ion-col>
+        </ion-row>
+      </ion-grid>
+      <!--</ion-card-title>-->
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row class="row1">
+          <!--<ion-card-title>-->
+          <ion-col>数据结构</ion-col>
+          <ion-col>170327024</ion-col>
+          <ion-col>江萱</ion-col>
+        </ion-row>
+      </ion-grid>
+      <!--</ion-card-title>-->
+    </ion-card-content>
+  </ion-card>
 
   <!--</ion-grid>-->
 

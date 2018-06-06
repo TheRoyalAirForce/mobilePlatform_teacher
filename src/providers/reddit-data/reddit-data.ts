@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class RedditDataProvider {
-  hurl = 'http://dju46q.natappfree.cc/attendentServer';
+  hurl = 'http://lzy25.s1.natapp.cc/attendentServer';
   constructor(public http: Http) {
     console.log('Hello RedditDataProvider Provider');
   }
@@ -20,16 +20,16 @@ export class RedditDataProvider {
   }
 
   postLogin(id, password) {
-    let url = this.hurl + '/shhTest/personnelaction/CheckPersonnel?id=' + id + '&password=' + password;
+    let url = this.hurl + '/login/doLogin?username=' + id + '&password=' + password;
     return this.http.get(url).map(res => res.json());
   }
 
-  getPersonById(id) {
-    let url = this.hurl + '/shhTest/personnelaction/getPersonnelByID?id=' + id;
+  getstartcourse(id) {
+    let url = this.hurl + '/course/startCourse?courseId=' + id;
     return this.http.get(url).map(res => res.json());
   }
-  getCallTheRollByID(id) {
-    let url = this.hurl + '/shhTest/calltherollaction/getCallTheRollByID?id=' + id;
+  getstudentlist(id) {
+    let url = this.hurl + '/course/getStudentList?courseId=' + id;
     return this.http.get(url).map(res => res.json());
   }
   getCallTheRollByIDAndCoursename1(id,coursename){

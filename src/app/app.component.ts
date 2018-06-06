@@ -67,9 +67,7 @@ export class MyApp {
     }
     this.pages = [
       { title: '主页', component: HomePage, icon: 'chatboxes' }
-      // { title: '手机橱窗', component: ListPage, icon: 'create' },
-      // { title: '邀请有礼', component: ListPage, icon: 'git-merge' },
-      // { title: '资金账户', component: ListPage, icon: 'cash' },
+
     ];
   }
 
@@ -90,5 +88,9 @@ export class MyApp {
 
   gotoSettingPage(){
     this.nav.push(SettingPage);
+  }
+
+  logout(){
+    this.nav.push(LogInPage)
   }
 }
