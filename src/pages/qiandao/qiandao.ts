@@ -48,7 +48,7 @@ export class QiandaoPage {
     console.log('ionViewDidLoad QiandaoPage');
   }
   find(){
-
+    // this.reddit.
   }
   start() {
     this.reddit.getstartcourse('30002').subscribe(
