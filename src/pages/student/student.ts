@@ -16,7 +16,7 @@ import {ToastProvider} from "../../providers/toast/toast";
   templateUrl: 'student.html',
 })
 export class StudentPage {
-  data :any[];
+  data :any;
   result=[0,1,2,3];
   constructor(public navCtrl: NavController, public navParams: NavParams,public reddit:RedditDataProvider,public toastProvider:ToastProvider) {
   }
@@ -28,7 +28,6 @@ export class StudentPage {
         console.log(result);
         if(result.code=='1'){
           this.data=result.data;
-          console.log(this.data[0]['studentId']);
         }
         else{
           this.toastProvider.show('获取学生信息失败', 'success')

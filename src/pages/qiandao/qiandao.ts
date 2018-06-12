@@ -41,17 +41,26 @@ export class QiandaoPage {
   lieT=[];
   final:any;
   now = new Date();
+  items: Array<{studentId: string, col: string, flag: string,isLeave: string, signTime: string, row: string,isAbsent: string}>;
   constructor(public navCtrl: NavController, public navParams: NavParams, public reddit:RedditDataProvider,public toastProvider:ToastProvider) {
+    this.items = [];
+    this.reddit.getstudentname('30003').subscribe(
+      result => {
+        this.result2=result.data;
+      })
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QiandaoPage');
   }
   find(){
-    // this.reddit.
+    this.reddit.getstudentname('30003').subscribe(
+      result => {
+        this.result2=result.data;
+      })
   }
   start() {
-    this.reddit.getstartcourse('30002').subscribe(
+    this.reddit.getstartcourse('30003').subscribe(
       result => {
         if(result.isOk==true)
         {

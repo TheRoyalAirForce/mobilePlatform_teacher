@@ -42,26 +42,33 @@
   </ion-item>
   <!--<ion-grid no-lines="">-->
   <div class="show3">
-    <ion-grid>
-
-      <ion-row class="row1">
-        <ion-col class="col" >姓名</ion-col>
+    <ion-card>
+      <ion-card-content>
+        <ion-grid>
+        <ion-row class="row1">
         <ion-col class="col" >学号</ion-col>
-        <ion-col class="col" >签到时间</ion-col>
-        <ion-col class="col"  >签到位置</ion-col>
+        <ion-col class="col" >签到列</ion-col>
+        <ion-col class="col"  >签到行</ion-col>
         <ion-col class="col" >签到状态</ion-col>
-      </ion-row>
-
-      <ion-row *ngFor="let r of result2">
-        <ion-col >{{r.pname}}</ion-col>
-        <ion-col >{{r.ID}}</ion-col>
-        <ion-col>{{r.calldate}}</ion-col>
-        <ion-col>{{r.callposition}}</ion-col>
-        <ion-col>{{r.callstate}}</ion-col>
-      </ion-row>
-
-
-    </ion-grid>
+        </ion-row>
+        </ion-grid>
+        <!--</ion-card-title>-->
+      </ion-card-content>
+    </ion-card>
+      <ion-card *ngFor="let r of result2">
+        <ion-card-content>
+          <ion-grid>
+            <ion-row class="row1">
+              <!--<ion-card-title>-->
+              <ion-col >{{r.studentId}}</ion-col>
+              <ion-col >{{r.col}}</ion-col>
+              <ion-col>{{r.row}}</ion-col>
+              <ion-col>{{r.flag}}</ion-col>
+            </ion-row>
+          </ion-grid>
+          <!--</ion-card-title>-->
+        </ion-card-content>
+      </ion-card>
   </div>
   <!--</ion-grid>-->
   <ion-content>

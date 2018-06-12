@@ -28,7 +28,6 @@
       <ion-grid>
         <ion-row class="row1">
           <!--<ion-card-title>-->
-          <ion-col>课程名</ion-col>
           <ion-col>学号</ion-col>
           <ion-col>姓名</ion-col>
         </ion-row>
@@ -36,45 +35,52 @@
       <!--</ion-card-title>-->
     </ion-card-content>
   </ion-card>
-  <ion-card>
+  <!--<ion-card>-->
+    <!--<ion-card-content>-->
+      <!--<ion-grid>-->
+        <!--<ion-row class="row1">-->
+          <!--&lt;!&ndash;<ion-card-title>&ndash;&gt;-->
+          <!--<ion-col>数据结构</ion-col>-->
+          <!--<ion-col>170327009</ion-col>-->
+          <!--<ion-col>陈立</ion-col>-->
+        <!--</ion-row>-->
+      <!--</ion-grid>-->
+      <!--&lt;!&ndash;</ion-card-title>&ndash;&gt;-->
+    <!--</ion-card-content>-->
+  <!--</ion-card>-->
+  <!--<ion-card>-->
+    <!--<ion-card-content>-->
+      <!--<ion-grid>-->
+        <!--<ion-row class="row1">-->
+          <!--&lt;!&ndash;<ion-card-title>&ndash;&gt;-->
+          <!--<ion-col>数据结构</ion-col>-->
+          <!--<ion-col>170327019</ion-col>-->
+          <!--<ion-col>邓文路</ion-col>-->
+        <!--</ion-row>-->
+      <!--</ion-grid>-->
+      <!--&lt;!&ndash;</ion-card-title>&ndash;&gt;-->
+    <!--</ion-card-content>-->
+  <!--</ion-card>-->
+  <ion-card *ngFor="let r of data">
     <ion-card-content>
       <ion-grid>
         <ion-row class="row1">
           <!--<ion-card-title>-->
-          <ion-col>数据结构</ion-col>
-          <ion-col>170327009</ion-col>
-          <ion-col>陈立</ion-col>
+          <ion-col >{{r.studentId}}</ion-col>
+          <ion-col >{{r.studentName}}</ion-col>
         </ion-row>
       </ion-grid>
       <!--</ion-card-title>-->
     </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-content>
-      <ion-grid>
-        <ion-row class="row1">
-          <!--<ion-card-title>-->
-          <ion-col>数据结构</ion-col>
-          <ion-col>170327019</ion-col>
-          <ion-col>邓文路</ion-col>
-        </ion-row>
-      </ion-grid>
-      <!--</ion-card-title>-->
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content>
-      <ion-grid>
-        <ion-row class="row1">
-          <!--<ion-card-title>-->
-          <ion-col>数据结构</ion-col>
-          <ion-col>170327024</ion-col>
-          <ion-col>江萱</ion-col>
-        </ion-row>
-      </ion-grid>
-      <!--</ion-card-title>-->
-    </ion-card-content>
-  </ion-card>
+
+  <!--<ion-row *ngFor="let r of result2">-->
+    <!--<ion-col >{{r.studentId}}</ion-col>-->
+    <!--<ion-col >{{r.col}}</ion-col>-->
+    <!--<ion-col>{{r.row}}</ion-col>-->
+    <!--<ion-col>{{r.flag}}</ion-col>-->
+  <!--</ion-row>-->
+
 
   <!--</ion-grid>-->
 

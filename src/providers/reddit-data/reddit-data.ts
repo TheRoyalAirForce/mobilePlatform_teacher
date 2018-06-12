@@ -58,8 +58,8 @@ export class RedditDataProvider {
     let url=this.hurl+'/shhTest/markaction/getMarkByName?courseName='+courseName;
     return this.http.get(url).map(res => res.json());
   }
-  updateMark(id,courseName,dailyScore,finalScore){
-    let url=this.hurl+'/shhTest/markaction/updateMark?id='+id+'&courseName='+courseName+'&dailyScore='+dailyScore+'&finalScore='+finalScore;
+  getstudentname(id){
+    let url=this.hurl+'/course/getSignList?courseId='+id;
     return this.http.get(url).map(res => res.json());
   }
   getMarkByNameAndID(id,courseName){
