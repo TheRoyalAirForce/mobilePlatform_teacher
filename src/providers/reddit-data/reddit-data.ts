@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class RedditDataProvider {
-  hurl = 'http://www.fzdxlzy.cn/attendentServer';
+  hurl = 'http://123.207.72.30/attendentServer';
   constructor(public http: Http) {
     console.log('Hello RedditDataProvider Provider');
   }

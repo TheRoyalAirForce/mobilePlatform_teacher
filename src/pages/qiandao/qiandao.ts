@@ -68,7 +68,7 @@ export class QiandaoPage {
         }
         else{
           console.log(result.isOk)
-          this.toastProvider.show('开始课程失败请联系管理员', 'fail')
+          this.toastProvider.show('开始课程失败，课程已经开始，更多疑问请联系管理员', 'fail')
         }
       })
   }
